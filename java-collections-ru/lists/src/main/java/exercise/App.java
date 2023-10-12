@@ -1,6 +1,5 @@
 package exercise;
 
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,19 +26,19 @@ class App {
         boolean result = true;
         int resultSize = 0;
 
-        for (String wordSymbol : wordArray){
-            if (symbolsArray.contains(wordSymbol)){
+        for (String wordSymbol : wordArray) {
+            if (symbolsArray.contains(wordSymbol)) {
                 symbolsArray.remove(wordSymbol);
-                resultSize +=1;
+                resultSize += 1;
             } else {
                 result = false;
             }
         }
-        if (resultSize != wordArray.size()){
+        if (resultSize != wordArray.size()) {
             result = false;
         }
 
-return result;
+        return result;
     }
 }
 //END
