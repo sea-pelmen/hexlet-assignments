@@ -25,7 +25,6 @@ class App {
         if (wordsCount.isEmpty()) {
             return "{}";
         }
-
         StringBuilder resultPrint = new StringBuilder("{\n");
         for (Map.Entry<String, Integer> entry : wordsCount.entrySet()) {
             resultPrint.append("  ").append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
